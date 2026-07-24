@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teach Me Something New</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="app" role="main">
+      <header class="header">
+        <h1 class="title">Teach Me Something New</h1>
+        <p class="subtitle">One click. One idea. No decisions.</p>
+      </header>
+
+      <section class="content" id="content">
+        <div class="state state-idle" id="state-idle">
+          <button
+            id="teach-btn"
+            class="btn btn-primary btn-large"
+            type="button"
+            aria-label="Teach me something new"
+          >
+            Teach Me Something New
+          </button>
+          <p class="hint">We'll pick a random topic for you.</p>
+        </div>
+
+        <div class="state state-loading hidden" id="state-loading" aria-live="polite">
+          <div class="spinner" aria-hidden="true"></div>
+          <p class="loading-text">Finding something interesting...</p>
+        </div>
+
+      </section>
+    </main>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
