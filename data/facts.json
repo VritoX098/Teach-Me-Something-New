@@ -1,0 +1,43 @@
+{
+  "scienceFacts": [
+    { "title": "The Eiffel Tower grows in summer", "description": "Heat causes the iron structure to expand, making the tower up to 15 cm taller during hot weather." },
+    { "title": "Your stomach gets a new lining every few days", "description": "Cells lining the stomach are replaced roughly every 3 to 5 days to avoid being dissolved by digestive acid." },
+    { "title": "Lightning is five times hotter than the Sun's surface", "description": "A bolt of lightning can reach around 30,000 K, while the Sun's surface hovers near 5,800 K." }
+  ],
+  "historicalEvents": [
+    { "title": "The shortest war in history lasted 38 minutes", "description": "The Anglo-Zanzibar War of 1896 ended in under 40 minutes after British warships shelled the Sultan's palace." },
+    { "title": "Rome had a population of 1 million in 100 CE", "description": "Ancient Rome was one of the first cities to hit a million residents. London wouldn't reach that number again until the 1800s." },
+    { "title": "Napoleon was once attacked by rabbits", "description": "During a hunt in 1807, hundreds of rabbits released for sport instead swarmed Napoleon and his men, forcing them to retreat." },
+    { "title": "The Ottoman Empire lasted 600 years", "description": "Founded in 1299 and dissolved in 1922, it was one of the longest-lasting empires in history." }
+  ],
+  "productivityTips": [
+    { "title": "Use the two-minute rule", "description": "If a task takes less than two minutes, do it immediately. It clears mental clutter and prevents small tasks from piling up." },
+    { "title": "Use single-tasking", "description": "Studies show multitasking can reduce productivity by up to 40%. Focus on one task until it reaches a natural stopping point." },
+    { "title": "Try the Pomodoro Technique", "description": "Work for 25 minutes, break for 5. After four cycles, take a longer break. It creates urgency and prevents burnout." },
+    { "title": "Adopt a shutdown ritual", "description": "End each workday with a short review and a plan for tomorrow. It signals your brain to disconnect and rest fully." }
+  ],
+  "aiTools": [
+    { "title": "Perplexity", "description": "An AI-powered answer engine that cites sources for every claim. Great for research when you want more than a chat reply.", "url": "https://www.perplexity.ai" },
+    { "title": "Notion AI", "description": "AI writing and summarization built directly into Notion pages, useful for meeting notes and drafting docs.", "url": "https://www.notion.so/product/ai" },
+    { "title": "Suno", "description": "Generate original songs, complete with vocals and instrumentation, from a short text prompt.", "url": "https://suno.com" },
+    { "title": "Claude", "description": "A capable general-purpose AI assistant known for careful reasoning, long context, and helpful tone.", "url": "https://claude.ai" }
+  ],
+  "programmingConcepts": [
+    { "title": "Idempotency", "description": "An operation is idempotent if running it multiple times produces the same result as running it once. Critical for safe retries in distributed systems and APIs." },
+    { "title": "Race conditions", "description": "A bug where the outcome depends on the unpredictable ordering of concurrent operations. Often fixed with locks, atomics, or careful state design." },
+    { "title": "Memoization", "description": "Caching the result of an expensive function call so repeated calls with the same arguments return instantly." }
+  ],
+  "wikipediaSeeds": [
+    "Nikola_Tesla", "Great_Barrier_Reef", "Alan_Turing", "Silk_Road", "Standard_Model", "Antikythera_mechanism", "Voyager_1", "Marie_Curie", "Kyoto", "Cuneiform", "Chernobyl_disaster", "General_relativity", "Ada_Lovelace", "Deep_learning", "Bioluminescence", "Mongol_Empire", "Bauhaus", "Fermi_paradox", "Ikigai", "Stoicism"
+  ],
+  "githubRepos": [
+    { "title": "freeCodeCamp/freeCodeCamp", "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn to code for free.", "url": "https://github.com/freeCodeCamp/freeCodeCamp" },
+    { "title": "donnemartin/system-design-primer", "description": "Learn how to design large-scale systems. Prep for the system design interview.", "url": "https://github.com/donnemartin/system-design-primer" },
+    { "title": "kamranahmedse/developer-roadmap", "description": "Interactive roadmaps, guides and other resources to help you grow as a developer.", "url": "https://github.com/kamranahmedse/developer-roadmap" }
+  ],
+  "words": [
+    { "word": "Serendipity", "partOfSpeech": "noun", "definition": "The occurrence of events by chance in a happy or beneficial way." },
+    { "word": "Limerence", "partOfSpeech": "noun", "definition": "The state of being infatuated or obsessed with another person." },
+    { "word": "Halcyon", "partOfSpeech": "adjective", "definition": "Denoting a period of time in the past that was idyllically happy and peaceful." }
+  ]
+}
