@@ -1,5 +1,5 @@
 import { pick, fetchJson } from "../utils/random.js";
-
+import { getData } from "./dataStore.js";
 
 async function wikipedia() {
   try {
@@ -7,7 +7,7 @@ async function wikipedia() {
       "https://en.wikipedia.org/api/rest_v1/page/random/summary"
     );
     return {
-      category: "Wikipedia Article"
+      category: "Wikipedia Article",
       title: data.title,
       description:
         data.extract || "Open the article to read the full summary.",
@@ -15,7 +15,15 @@ async function wikipedia() {
         data.content_urls?.desktop?.page ||
         `https://en.wikipedia.org/wiki/${encodeURIComponent(data.title)}`,
     };
-  } 
+  } catch {
+    const store = await getData();
+    const seed = pick(store.wikipediaSeeds);
+    return {
+      category: "Wikipedia Article",
+      title: seed.replace(/_/g, " "),
+      description: "A curated topic worth exploring on Wikipedia.",
+      url: `https://en.wikipedia.org/wiki/${seed}`,
+    };
   }
 }
 
@@ -34,7 +42,11 @@ async function githubRepo() {
         repo.description || "Explore this popular open source project.",
       url: repo.html_url,
     };
-  } 
+  } catch {
+    const store = await getData();
+    const repo = pick(store.githubRepos);
+    return { category: "GitHub Repository", ...repo };
+  }
 }
 
 async function scienceFact() {
@@ -50,7 +62,7 @@ async function scienceFact() {
 
 async function historicalEvent() {
   const store = await getData();
-  const item = pick(store.historicalEvents)
+  const item = pick(store.historicalEvents);
   return {
     category: "Historical Event",
     title: item.title,
@@ -75,7 +87,8 @@ async function englishWord() {
     if (!def) throw new Error("no definition");
     return {
       category: "English Word",
-      title: `${word} (${meaning.partOfSpeech || "word"})`
+      title: `${word} (${meaning.partOfSpeech || "word"})`,
+      description: def,
       url: `https://www.merriam-webster.com/dictionary/${encodeURIComponent(word)}`,
     };
   } catch {
@@ -88,11 +101,21 @@ async function englishWord() {
   }
 }
 
+async function productivityTip() {
+  const store = await getData();
+  const tip = pick(store.productivityTips);
+  return {
+    category: "Productivity Tip",
+    title: tip.title,
+    description: tip.description,
+    url: `https://www.google.com/search?q=${encodeURIComponent(tip.title)}`,
+  };
+}
 
 async function aiTool() {
   const store = await getData();
   const tool = pick(store.aiTools);
-  return { category: "AI Tool", ...tool }
+  return { category: "AI Tool", ...tool };
 }
 
 async function programmingConcept() {
@@ -114,7 +137,10 @@ const sources = [
   englishWord,
   productivityTip,
   aiTool,
-  programmingConcept
+  programmingConcept,
 ];
 
+export async function getRandomLesson() {
+  const fn = pick(sources);
+  return await fn();
 }
