@@ -1,29 +1,52 @@
 {
   "scienceFacts": [
+    { "title": "Octopuses have three hearts", "description": "Two pump blood to the gills, while the third circulates it to the rest of the body. The main heart stops beating when they swim, which is why they prefer crawling." },
+    { "title": "Bananas are radioactive", "description": "Bananas contain potassium-40, a naturally radioactive isotope. The dose is tiny and harmless, but real enough that shipments of bananas can trigger radiation sensors at ports." },
+    { "title": "Honey never spoils", "description": "Archaeologists have found pots of honey in ancient Egyptian tombs, over 3,000 years old, still perfectly edible. Its low moisture and acidic pH prevent microbes from growing." },
+    { "title": "A day on Venus is longer than its year", "description": "Venus rotates so slowly that a single day (243 Earth days) is longer than the time it takes to orbit the Sun (225 Earth days)." },
+    { "title": "Humans share 60% of their DNA with bananas", "description": "Most of that shared DNA controls basic cellular functions common to all life on Earth, like metabolism and cell division." },
+    { "title": "Sharks predate trees", "description": "Sharks have been swimming Earth's oceans for around 400 million years, roughly 50 million years longer than trees have existed on land." },
+    { "title": "Water can boil and freeze at the same time", "description": "At the triple point of water (0.01 C and low pressure), water exists simultaneously as a solid, liquid, and gas." },
     { "title": "The Eiffel Tower grows in summer", "description": "Heat causes the iron structure to expand, making the tower up to 15 cm taller during hot weather." },
     { "title": "Your stomach gets a new lining every few days", "description": "Cells lining the stomach are replaced roughly every 3 to 5 days to avoid being dissolved by digestive acid." },
     { "title": "Lightning is five times hotter than the Sun's surface", "description": "A bolt of lightning can reach around 30,000 K, while the Sun's surface hovers near 5,800 K." }
   ],
   "historicalEvents": [
     { "title": "The shortest war in history lasted 38 minutes", "description": "The Anglo-Zanzibar War of 1896 ended in under 40 minutes after British warships shelled the Sultan's palace." },
+    { "title": "Cleopatra lived closer to the Moon landing than to the Pyramids", "description": "The Great Pyramid was built around 2560 BCE. Cleopatra lived around 30 BCE. The Moon landing was in 1969, only about 2,000 years after her." },
+    { "title": "Oxford is older than the Aztec Empire", "description": "Teaching existed at Oxford as early as 1096. The Aztec Empire wasn't founded until 1345." },
     { "title": "Rome had a population of 1 million in 100 CE", "description": "Ancient Rome was one of the first cities to hit a million residents. London wouldn't reach that number again until the 1800s." },
     { "title": "Napoleon was once attacked by rabbits", "description": "During a hunt in 1807, hundreds of rabbits released for sport instead swarmed Napoleon and his men, forcing them to retreat." },
+    { "title": "The Great Wall of China took over 2,000 years to build", "description": "Construction spanned multiple dynasties from the 7th century BCE to the Ming Dynasty in the 17th century." },
+    { "title": "The first computer programmer was a woman", "description": "Ada Lovelace wrote the first algorithm intended for Charles Babbage's Analytical Engine in the 1840s." },
     { "title": "The Ottoman Empire lasted 600 years", "description": "Founded in 1299 and dissolved in 1922, it was one of the longest-lasting empires in history." }
   ],
   "productivityTips": [
     { "title": "Use the two-minute rule", "description": "If a task takes less than two minutes, do it immediately. It clears mental clutter and prevents small tasks from piling up." },
+    { "title": "Time-block your calendar", "description": "Assign specific hours to specific tasks. It replaces vague to-do lists with concrete commitments and defends deep work." },
+    { "title": "Batch similar tasks", "description": "Group emails, calls, and admin work into dedicated blocks. Context switching is one of the biggest silent productivity killers." },
+    { "title": "Follow the 90/20 rule", "description": "Work in 90-minute focused sprints, then take a 20-minute break. It aligns with the body's natural ultradian rhythm." },
+    { "title": "Write tomorrow's top 3 tonight", "description": "Deciding priorities in advance removes morning friction and makes it easier to start on real work instead of email." },
     { "title": "Use single-tasking", "description": "Studies show multitasking can reduce productivity by up to 40%. Focus on one task until it reaches a natural stopping point." },
     { "title": "Try the Pomodoro Technique", "description": "Work for 25 minutes, break for 5. After four cycles, take a longer break. It creates urgency and prevents burnout." },
     { "title": "Adopt a shutdown ritual", "description": "End each workday with a short review and a plan for tomorrow. It signals your brain to disconnect and rest fully." }
   ],
   "aiTools": [
     { "title": "Perplexity", "description": "An AI-powered answer engine that cites sources for every claim. Great for research when you want more than a chat reply.", "url": "https://www.perplexity.ai" },
+    { "title": "Cursor", "description": "An AI-first code editor built on VS Code with deep model integration for editing, refactoring, and chatting about your codebase.", "url": "https://cursor.com" },
+    { "title": "ElevenLabs", "description": "State-of-the-art voice synthesis for realistic text-to-speech and voice cloning in dozens of languages.", "url": "https://elevenlabs.io" },
+    { "title": "Runway", "description": "Generative video and image tools for creators, including text-to-video, inpainting, and motion tracking.", "url": "https://runwayml.com" },
     { "title": "Notion AI", "description": "AI writing and summarization built directly into Notion pages, useful for meeting notes and drafting docs.", "url": "https://www.notion.so/product/ai" },
     { "title": "Suno", "description": "Generate original songs, complete with vocals and instrumentation, from a short text prompt.", "url": "https://suno.com" },
     { "title": "Claude", "description": "A capable general-purpose AI assistant known for careful reasoning, long context, and helpful tone.", "url": "https://claude.ai" }
   ],
   "programmingConcepts": [
     { "title": "Idempotency", "description": "An operation is idempotent if running it multiple times produces the same result as running it once. Critical for safe retries in distributed systems and APIs." },
+    { "title": "Big-O notation", "description": "A way to describe how an algorithm's runtime or memory scales with input size. O(1) is constant, O(n) is linear, O(n^2) is quadratic." },
+    { "title": "Referential transparency", "description": "An expression is referentially transparent if it can be replaced with its value without changing program behavior. It's a foundation of functional programming." },
+    { "title": "CAP theorem", "description": "In a distributed data store you can only guarantee two of Consistency, Availability, and Partition tolerance. Real systems trade these off constantly." },
+    { "title": "Debouncing vs throttling", "description": "Debounce waits for activity to stop before firing. Throttle limits fires to once per interval. Both tame noisy events like scroll or input." },
+    { "title": "Pure functions", "description": "A pure function returns the same output for the same input and has no side effects. They're easier to test, cache, and reason about." },
     { "title": "Race conditions", "description": "A bug where the outcome depends on the unpredictable ordering of concurrent operations. Often fixed with locks, atomics, or careful state design." },
     { "title": "Memoization", "description": "Caching the result of an expensive function call so repeated calls with the same arguments return instantly." }
   ],
@@ -32,11 +55,21 @@
   ],
   "githubRepos": [
     { "title": "freeCodeCamp/freeCodeCamp", "description": "freeCodeCamp.org's open-source codebase and curriculum. Learn to code for free.", "url": "https://github.com/freeCodeCamp/freeCodeCamp" },
+    { "title": "sindresorhus/awesome", "description": "A curated list of awesome lists on every imaginable topic in programming and beyond.", "url": "https://github.com/sindresorhus/awesome" },
+    { "title": "microsoft/vscode", "description": "The source code for Visual Studio Code, the popular open-source editor.", "url": "https://github.com/microsoft/vscode" },
+    { "title": "torvalds/linux", "description": "The Linux kernel source tree, maintained by Linus Torvalds.", "url": "https://github.com/torvalds/linux" },
+    { "title": "public-apis/public-apis", "description": "A collective list of free APIs for use in software and web development.", "url": "https://github.com/public-apis/public-apis" },
+    { "title": "trekhleb/javascript-algorithms", "description": "Algorithms and data structures implemented in JavaScript with explanations.", "url": "https://github.com/trekhleb/javascript-algorithms" },
     { "title": "donnemartin/system-design-primer", "description": "Learn how to design large-scale systems. Prep for the system design interview.", "url": "https://github.com/donnemartin/system-design-primer" },
     { "title": "kamranahmedse/developer-roadmap", "description": "Interactive roadmaps, guides and other resources to help you grow as a developer.", "url": "https://github.com/kamranahmedse/developer-roadmap" }
   ],
   "words": [
     { "word": "Serendipity", "partOfSpeech": "noun", "definition": "The occurrence of events by chance in a happy or beneficial way." },
+    { "word": "Ephemeral", "partOfSpeech": "adjective", "definition": "Lasting for a very short time." },
+    { "word": "Sonder", "partOfSpeech": "noun", "definition": "The realization that each passer-by is living a life as vivid and complex as your own." },
+    { "word": "Petrichor", "partOfSpeech": "noun", "definition": "The pleasant, earthy smell produced when rain falls on dry soil." },
+    { "word": "Ineffable", "partOfSpeech": "adjective", "definition": "Too great or extreme to be expressed or described in words." },
+    { "word": "Sesquipedalian", "partOfSpeech": "adjective", "definition": "Characterized by long words; long-winded." },
     { "word": "Limerence", "partOfSpeech": "noun", "definition": "The state of being infatuated or obsessed with another person." },
     { "word": "Halcyon", "partOfSpeech": "adjective", "definition": "Denoting a period of time in the past that was idyllically happy and peaceful." }
   ]
