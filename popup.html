@@ -31,6 +31,22 @@
           <p class="loading-text">Finding something interesting...</p>
         </div>
 
+        <div class="state state-result hidden" id="state-result" aria-live="polite">
+          <article class="card" id="result-card">
+            <span class="category" id="result-category">Category</span>
+            <h2 class="card-title" id="result-title">Title</h2>
+            <p class="card-description" id="result-description">Description</p>
+            <div class="card-actions">
+              <button id="open-btn" class="btn btn-primary" type="button">Open</button>
+              <button id="again-btn" class="btn btn-secondary" type="button">Another Random</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="state state-error hidden" id="state-error" role="alert">
+          <p class="error-text" id="error-text">Something went wrong.</p>
+          <button id="retry-btn" class="btn btn-primary" type="button">Try Again</button>
+        </div>
       </section>
     </main>
 
